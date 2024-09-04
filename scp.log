@@ -1,0 +1,40 @@
+2024-09-04 14:27:27,200 - INFO - storescp started with PID: 2392
+2024-09-04 14:27:27,200 - INFO - storescp started. Press Ctrl+C to stop.
+2024-09-04 14:27:27,205 - INFO - Started monitoring ./output/
+2024-09-04 15:12:43,532 - INFO - storescp started with PID: 14520
+2024-09-04 15:12:43,532 - INFO - storescp started. Press Ctrl+C to stop.
+2024-09-04 15:12:43,534 - INFO - Started monitoring ./output/
+2024-09-04 15:13:18,673 - INFO - Write access granted to './output/I191.dcm' and its contents on Windows.
+2024-09-04 15:13:29,399 - INFO - created directory ./output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0
+
+2024-09-04 15:13:29,415 - INFO - new file from file is ./output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0\I191.dcm
+
+2024-09-04 15:13:29,461 - INFO - Write access granted to './output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0\I191.dcm' and its contents on Windows.
+2024-09-04 15:13:29,569 - INFO - Write access granted to './output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0\I191.dcm' and its contents on Windows.
+2024-09-04 15:13:30,408 - INFO - Response from orthanc_instances api is {
+   "ID" : "660ca12b-7296358e-9a24d5e4-6bc2b1c3-6a36ea40",
+   "ParentPatient" : "8e9e8135-f9e05d3e-aa128825-97883040-ec6c49a5",
+   "ParentSeries" : "f464a6b5-34ecbc9b-46c91f87-58af8bc3-07c432ba",
+   "ParentStudy" : "750255f1-a6d57cdf-6f7692af-b6eb20e8-76b2cd54",
+   "Path" : "/instances/660ca12b-7296358e-9a24d5e4-6bc2b1c3-6a36ea40",
+   "Status" : "Success"
+}
+
+
+2024-09-04 15:13:30,439 - INFO - Successfully sent file ./output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0\I191.dcm to orthanc_studies, create patient and create patient report apis
+
+2024-09-04 15:13:30,784 - INFO - Got the patient level information successfully from orthanc_studies api
+2024-09-04 15:13:30,799 - INFO - Input to create_patient api is {'ref_Code': '', 'patient_name': 'NAME^NONE', 'patient_mobile': '', 'patient_email': '', 'dob': '', 'gender': None, 'address': '', 'client_id': 15, 'branch_id': 12, 'estatus': 1}
+
+2024-09-04 15:13:31,450 - INFO - Response from create_patient api is {'statusCode': 200, 'data': {'fieldCount': 0, 'affectedRows': 1, 'insertId': 24, 'info': '', 'serverStatus': 2, 'warningStatus': 2, 'changedRows': 0}, 'message': 'Data inserted Successfully'}
+
+2024-09-04 15:13:31,480 - INFO - Input to create_patient_report api is {'patient_id': 24, 'patient_study_id': '750255f1-a6d57cdf-6f7692af-b6eb20e8-76b2cd54', 'patient_study_instance_id': '1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0', 'test_type_id': 0, 'test_sub_type_id': 0, 'priority_type': 'normal', 'techniques': '', 'clinical_history': '', 'clinical_history_file': None, 'results_type': '', 'doctor_id': 0, 'hospital_id': 0, 'client_login_id': '28', 'radiologist_id': 0, 'client_id': '15', 'branch_id': '12'}
+
+2024-09-04 15:13:31,886 - INFO - Response from create_patient_report api is {'statusCode': 200, 'data': {'result': {'fieldCount': 0, 'affectedRows': 1, 'insertId': 41, 'info': '', 'serverStatus': 2, 'warningStatus': 2, 'changedRows': 0}, 'patient_report_analysis_id': 29}, 'message': 'Data inserted Successfully'}
+
+2024-09-04 15:13:31,965 - INFO - Successfully removed normal dcm file ./output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0\I191.dcm inside outputs/something directory
+2024-09-04 15:13:40,314 - INFO - created directory ./output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0
+
+2024-09-04 15:13:40,345 - INFO - new file from file is ./output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0\I191.dcm
+
+2024-09-04 15:13:40,392 - ERROR - Error processing study: 1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0, Error: [WinError 2] The system cannot find the file specified: './output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0\\I191.dcm' -> './output/1.3.6.1.4.1.5962.99.1.1761388472.1291962045.1616669124536.2592.0\\I191.dcm'
